@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
+    /*
+     * Points of different cards
+     * for Team A and Team B
+     */
     public void aceTeamA(View view){
         scoreTeamA = scoreTeamA + 11;
         displayForTeamA(scoreTeamA);
@@ -78,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
     }
+
+    /*
+     * Reset the Score for Start Again
+     */
 
     public void resetScore (View view){
         scoreTeamA = 0;
