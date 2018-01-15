@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Brisca Counter</string>
+    <string name="ace">Ace</string>
+    <string name="three">Three</string>
+    <string name="king">King</string>
+    <string name="horse">Horse</string>
+    <string name="jack">Jack</string>
+    <string name="teamA">Player(s)\/Team A</string>
+    <string name="startCount">0</string>
+    <string name="teamB">Player(s)\/Team B</string>
+    <string name="reset">Reset</string>
+
+</resources>
