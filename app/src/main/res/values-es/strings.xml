@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contador Brisca</string>
+    <string name="ace">As</string>
+    <string name="three">Tres</string>
+    <string name="king">Rey</string>
+    <string name="horse">Caballo</string>
+    <string name="jack">Jota</string>
+    <string name="teamA">Jugador(es)/Equipo A</string>
+    <string name="teamB">Jugador(es)/Equipo B</string>
+    <string name="reset">Reiniciar</string>
+</resources>
