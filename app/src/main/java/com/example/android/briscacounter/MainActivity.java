@@ -10,12 +10,43 @@ public class MainActivity extends AppCompatActivity {
     private int scoreTeamA = 0;
     private int scoreTeamB = 0;
 
-    @Override
+    static final String score_team_a = "TeamAScore";
+    static final String score_team_b = "TeamBScore";
+
+    /*@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+    }*/
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState){
+        savedInstanceState.putInt(score_team_a,scoreTeamA);
+        savedInstanceState.putInt(score_team_b,scoreTeamB);
 
+        super.onSaveInstanceState(savedInstanceState);
+
+    }
+    /*protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        scoreTeamA = savedInstanceState.getInt(score_team_a);
+        scoreTeamB = savedInstanceState.getInt(score_team_b);
+    }*/
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        if (savedInstanceState!= null){
+            scoreTeamA = savedInstanceState.getInt(score_team_a);
+            scoreTeamB = savedInstanceState.getInt(score_team_b);
+        } else {
+            scoreTeamA = 0;
+            scoreTeamB = 0;
+        }
+        setContentView(R.layout.activity_main);
+
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
     /*
      * Display the Teams Score
      */
