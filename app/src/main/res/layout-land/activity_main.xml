@@ -4,9 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.briscacounter.MainActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,81 +22,39 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/TeamStyle"
                     android:text="@string/teamA"
-                    android:textSize="14sp"
-                    android:textColor="#616161"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="@dimen/paddingTeamsTop"
-                    android:paddingBottom="@dimen/paddingUpDown"/>
+                    android:fontFamily="sans-serif-medium" />
 
                 <TextView
                     android:id="@+id/team_a_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/CounterStyle"
                     android:text="@string/startCount"
-                    android:textSize="56sp"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="#000"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="@dimen/paddingUpDown"
-                    android:paddingBottom="@dimen/paddingUpDown"/>
+                    android:fontFamily="sans-serif-light" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/UpperButton"
                     android:text="@string/ace"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginFirstTop"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="aceTeamA"/>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/NormalButton"
                     android:text="@string/three"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginUpDown"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="threeTeamA"/>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/NormalButton"
                     android:text="@string/king"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginUpDown"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="kingTeamA"/>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/NormalButton"
                     android:text="@string/horse"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginUpDown"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="horseTeamA" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/NormalButton"
                     android:text="@string/jack"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginUpDown"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="jackTeamA" />
 
             </LinearLayout>
@@ -112,81 +72,39 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/TeamStyle"
                     android:text="@string/teamB"
-                    android:textSize="14sp"
-                    android:textColor="#616161"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="@dimen/paddingTeamsTop"
-                    android:paddingBottom="@dimen/paddingUpDown" />
+                    android:fontFamily="sans-serif-medium" />
 
                 <TextView
                     android:id="@+id/team_b_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/CounterStyle"
                     android:text="@string/startCount"
-                    android:textSize="56sp"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="#000"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="@dimen/paddingUpDown"
-                    android:paddingBottom="@dimen/paddingUpDown" />
+                    android:fontFamily="sans-serif-light" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/UpperButton"
                     android:text="@string/ace"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginFirstTop"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="aceTeamB" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/NormalButton"
                     android:text="@string/three"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginUpDown"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="threeTeamB" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/NormalButton"
                     android:text="@string/king"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginUpDown"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="kingTeamB" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/NormalButton"
                     android:text="@string/horse"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginUpDown"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="horseTeamB" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/NormalButton"
                     android:text="@string/jack"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/marginUpDown"
-                    android:layout_marginLeft="@dimen/marginSides"
-                    android:layout_marginRight="@dimen/marginSides"
-                    android:layout_marginBottom="@dimen/marginUpDown"
                     android:onClick="jackTeamB" />
 
             </LinearLayout>
