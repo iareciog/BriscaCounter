@@ -1,7 +1,7 @@
 package com.example.android.briscacounter;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,11 +13,6 @@ public class MainActivity extends AppCompatActivity {
     static final String score_team_a = "TeamAScore";
     static final String score_team_b = "TeamBScore";
 
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }*/
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState){
         savedInstanceState.putInt(score_team_a,scoreTeamA);
@@ -26,12 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
 
     }
-    /*protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
 
-        scoreTeamA = savedInstanceState.getInt(score_team_a);
-        scoreTeamB = savedInstanceState.getInt(score_team_b);
-    }*/
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
